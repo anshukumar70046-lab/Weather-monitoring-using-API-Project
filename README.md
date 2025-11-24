@@ -1,76 +1,110 @@
-🌤️ Python Weather App
-A lightweight, desktop-based weather application built using Python, Tkinter, and the OpenWeatherMap API. This app allows users to search for any city worldwide and instantly view current weather conditions, temperature, humidity, wind speed, and more.
+# 🌤️ Python Weather App
 
-🚀 Features
-Real-time Data: Fetches live weather data using the OpenWeatherMap API.
+A lightweight, desktop-based weather application built with **Python**, **Tkinter**, and the **OpenWeatherMap API**. Instantly view current weather conditions, temperature, humidity, wind speed, and more for any city worldwide.
 
-Search Functionality: Type in any city name to get local weather updates.
+---
 
-Detailed Metrics: Displays:
+## 🚀 Features
 
-Current Temperature, Max & Min Temperature
+- **Real-time Weather Data:**  
+  Instant access to live weather updates from anywhere on the globe.
 
-Weather Conditions (e.g., Clear, Rain, Clouds)
+- **Search Any City:**  
+  Simply type the city name and get up-to-date local weather information.
 
-Pressure & Humidity
+- **Detailed Weather Metrics:**  
+  - **Temperature** (Current, Max, Min – in °C/°F)
+  - **Weather Conditions** (Clear, Rain, Clouds, etc.)
+  - **Pressure & Humidity**
+  - **Wind Speed**
+  - **Sunrise & Sunset Times** (local)
 
-Wind Speed
+- **Clean & Responsive UI:**  
+  Simple, modern interface built with Tkinter for an intuitive user experience.
 
-Sunrise & Sunset times
+---
 
-Clean UI: Simple and responsive graphical user interface built with Tkinter.
+## 🛠️ Technologies Used
 
-🛠️ Technologies Used
-Python 3.x
+- **Python 3.x**
+- **Tkinter** (GUI framework)
+- **Requests** (HTTP library for API calls)
+- **OpenWeatherMap API** (weather data source)
 
-Tkinter (GUI Framework)
+---
 
-Requests (HTTP Library for API calls)
+## 📦 Installation
 
-OpenWeatherMap API (Data Source)
-
-📦 Installation
 Follow these steps to set up and run the project locally:
 
-1. Clone the repository
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/weather-app-python.git
+   cd weather-app-python
+   ```
 
-Bash
+2. **Install Dependencies**
+   The app requires the `requests` library. Install using pip:
+   ```bash
+   pip install requests
+   ```
+   > 📝 **Note:** Tkinter comes pre-installed with most Python distributions. If you encounter errors, install `python-tk` (or `tkinter`) according to your OS.
 
-git clone https://github.com/your-username/weather-app-python.git
-cd weather-app-python
-2. Install dependencies The application uses the requests library to fetch data. If you don't have it installed, run:
+3. **Get an OpenWeatherMap API Key**  
+   - Register for a free API key at [OpenWeatherMap](https://openweathermap.org/appid).
+   - Replace `"YOUR_API_KEY_HERE"` in the code with your actual key.
 
-Bash
+4. **Run the Application**  
+   ```bash
+   python main.py
+   ```
+   > Replace `main.py` if your main file has a different name.
 
-pip install requests
-(Note: Tkinter usually comes pre-installed with Python. If you get an error, you may need to install python-tk specific to your OS).
+---
 
-3. Run the application
+## 🔑 API Key Note
 
-Bash
+For demonstration, you might find a placeholder API key in the code. **Always use your own API key for production or personal use**.
 
-python main.py
-(Replace main.py with whatever you named your python file).
+Update your main Python file:
+```python
+api = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=YOUR_API_KEY_HERE"
+```
+<img width="1425" height="965" alt="Screenshot 2025-11-24 204935" src="https://github.com/user-attachments/assets/660af28c-418d-4d75-9dc3-2ed3880ecb7d" />
 
-🔑 API Key Note
-This project currently uses a hardcoded API key for demonstration purposes. For a production environment or personal use, it is highly recommended to sign up for a free API key at OpenWeatherMap and replace the key in the code:
+---
 
-Python
 
-# In your python file
-api = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=YOUR_API_KEY_HERE"
-📸 Screenshots
-(You can add a screenshot of your running app here. It makes the README look much better!)
 
-🤝 Contributing
-Contributions are welcome! If you have suggestions for improvements or bug fixes, please feel free to:
+<img width="754" height="665" alt="Screenshot 2025-11-24 204732" src="https://github.com/user-attachments/assets/4f6454cf-e20b-4a08-b2e1-bb1f0f9b1533" />
 
-Fork the repository
 
-Create a new branch (git checkout -b feature-branch)
+---
 
-Commit your changes
+## 🤝 Contributing
 
-Push to the branch
+Contributions are welcome! Here's how you can help:
 
-Open a Pull Request
+1. **Fork the repository**
+2. **Create a new branch:**  
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. **Commit your changes**
+4. **Push to your branch**
+5. **Open a Pull Request**
+
+---
+
+## 📃 License
+
+This project is [MIT licensed](LICENSE).
+
+---MADE BY 
+NAME - ANSHU KUMAR 
+REG No. - 25BHI0040
+
+
+
+
+VIT BHOPAL 
